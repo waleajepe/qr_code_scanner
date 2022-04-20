@@ -1,3 +1,4 @@
+import 'package:card_scanner/pages/result_page.dart';
 import 'package:flutter/material.dart';
 import 'package:card_scanner/pages/mobile_view/mobile_view.dart';
 import 'package:card_scanner/pages/tab_view/tab_view.dart';
@@ -8,8 +9,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: ResponsiveLayout(mobileView: MobileView(), tabView: MobileView(),),
+    return  Scaffold(
+      body: ResponsiveLayout(mobileView: TabView(), tabView: TabView(),),
     );
   }
 }
